@@ -14,7 +14,7 @@ fonts=cv.FONT_HERSHEY_COMPLEX
 class_names=[]
 with open("classes.txt","r") as f:
     class_names=[cname.strip() for cname in f.readlines()]
-yoloNet=cv.dnn.readNet('yolov4-tiny-custom-training_best(red).weights','yolov4-tiny-custom-training.cfg') #weights are custom trained.
+yoloNet=cv.dnn.readNet('yolov4-tiny-custom-training_best(red_updated).weights','yolov4-tiny-custom-training.cfg') #weights are custom trained.
 yoloNet.setPreferableBackend(cv.dnn.DNN_BACKEND_CUDA)
 yoloNet.setPreferableTarget(cv.dnn.DNN_TARGET_CUDA_FP16)
 
