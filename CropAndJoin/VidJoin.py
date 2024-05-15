@@ -1,26 +1,3 @@
-# from vidgear.gears import VideoGear
-# import cv2
-# import time
-# stream1 = VideoGear(source=0, logging=True).start() 
-# stream2 = VideoGear(source=1, logging=True).start() 
-# while True: 
-#     frame1 = stream1.read()
-#     frame2 = stream2.read()
-#     if frame1 is None or frame2 is None:
-#         break
-#     cv2.imshow("Output Frame1", frame1)
-#     cv2.imshow("Output Frame2", frame2)
-#     key = cv2.waitKey(1) & 0xFF
-#     if key == ord("q"):
-#         break
-
-#     if key == ord("w"):
-#         cv2.imwrite("Image-1.jpg", frame1)
-#         cv2.imwrite("Image-2.jpg", frame2)
-
-# cv2.destroyAllWindows()
-# stream1.stop()
-
 from vidgear.gears import VideoGear
 import cv2
 import numpy as np
